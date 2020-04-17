@@ -63,7 +63,7 @@ public class APITest {
 
 		Integer id = RestAssured.given()
 //					 .log().all()
-					 .body("{\"task\": \"Tarefa teste\", \"dueDate\": \"2020-12-30\"}")
+					 .body("{\"task\": \"Tarefa teste para remoção\", \"dueDate\": \"2020-12-30\"}")
 					 .contentType(ContentType.JSON)
 				   .when()
 				     .post("/todo")
